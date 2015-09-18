@@ -1,0 +1,34 @@
+/***********************************************
+*****************Subscription ****************
+************************************************/
+$yellow: #ffba4d;
+
+.subscription {
+  padding-top: 8%;
+  padding-bottom: 8%;
+
+  h1 {}
+
+  .input-feild {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+  }
+
+  .email-btn {
+    background-color: $yellow;
+    padding: 2.5% 12%;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+
+    @media screen and (min-width: 700px) {
+      padding: 1% 32px;
+    }
+  }
+
+  a {
+    color: $yellow;
+  }
+}
