@@ -7,12 +7,8 @@ var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 var ghPages = require('gulp-gh-pages'); // added by Paula for deployment to Github Pages
-var bases = {
-    app: 'app/',
-    dist: 'dist/'
-}
 
-// added by Paula for deployment to Github Pages
+// added by Paula for deployment to Github Pages (TODO - ideally, we should have a deparate dist dir) 
 gulp.task('deploy', function() {
   return gulp.src('./**/*')
     .pipe(ghPages());
