@@ -8,14 +8,29 @@
 
   .flex-item {
     width: 100%;
-    border: 1px solid red;
 
+    &:hover {
+      // background: rgba(#2c2c2c, 0.22);
+      // filter: invert(0.2);
+      box-shadow: 3px 10px 74px -8px rgba(0, 0, 0, 0.44);
+      animation: fade 4s ease 1;
+      animation-fill-mode: forwards;
+
+      @keyframes fade {
+        0% {
+          filter: invert(0);
+        }
+
+        100% {
+          filter: invert(0.2);
+        }
+      }
+    }
+
+    // border: 1px solid red;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: column;
-
-      // min-width: 25%;
-
       min-width: 40%;
       height: auto;
       flex: 1;
@@ -24,10 +39,9 @@
     @media screen and (min-width: 900px) {
       display: flex;
       flex-direction: column;
+      min-width: 25%;
 
-      // min-width: 25%;
-
-      min-width: 20%;
+      // min-width: 20%;
       height: auto;
       flex: 1;
     }
