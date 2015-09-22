@@ -662,6 +662,18 @@ header {
     bottom: -30px;
     width: 100%; }
 
+button.btn {
+  background-color: #ffba4d;
+  padding: 2.5% 12%;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  border: none;
+  color: #fff;
+  margin: 5% auto; }
+  @media screen and (min-width: 700px) {
+    button.btn {
+      padding: 1% 32px; } }
+
 /***********************************************
 ****************Categories *******************
 ************************************************/
@@ -675,8 +687,30 @@ header {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
   .categories .flex-item {
-    width: 100%;
-    border: 1px solid red; }
+    width: 100%; }
+    .categories .flex-item:hover {
+      -webkit-box-shadow: 3px 10px 74px -8px rgba(0, 0, 0, 0.44);
+              box-shadow: 3px 10px 74px -8px rgba(0, 0, 0, 0.44);
+      -webkit-animation: fade 4s ease 1;
+              animation: fade 4s ease 1;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+
+@-webkit-keyframes fade {
+  0% {
+    -webkit-filter: invert(0);
+            filter: invert(0); }
+  100% {
+    -webkit-filter: invert(0.2);
+            filter: invert(0.2); } }
+
+@keyframes fade {
+  0% {
+    -webkit-filter: invert(0);
+            filter: invert(0); }
+  100% {
+    -webkit-filter: invert(0.2);
+            filter: invert(0.2); } }
     @media screen and (min-width: 768px) {
       .categories .flex-item {
         display: -webkit-box;
@@ -705,7 +739,7 @@ header {
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
                 flex-direction: column;
-        min-width: 20%;
+        min-width: 25%;
         height: auto;
         -webkit-box-flex: 1;
         -webkit-flex: 1;
