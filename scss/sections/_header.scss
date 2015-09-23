@@ -154,6 +154,7 @@ button.btn {
   margin: 5% auto;
 
   @media screen and (min-width: 700px) {
-    padding: 1% 32px;
+    padding: 1.5% 32px;
+    max-width: 326px;
   }
 }
