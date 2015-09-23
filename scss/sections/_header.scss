@@ -144,3 +144,17 @@ header {
     width: 100%;
   }
 }
+
+button.btn {
+  background-color: $yellow;
+  padding: 2.5% 12%;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  margin: 5% auto;
+
+  @media screen and (min-width: 700px) {
+    padding: 1.5% 32px;
+    max-width: 326px;
+  }
+}
